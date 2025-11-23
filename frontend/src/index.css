@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --luxe-bg: #0f0b12;
+  --card-bg: rgba(255,255,255,0.02);
+  --glass: rgba(255,255,255,0.04);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(180deg, #060308 0%, #0f0b12 100%);
+  min-height: 100vh;
+  color: #f8f7fb;
+}
+
+.chat-scroll::-webkit-scrollbar { width: 8px; }
+.chat-scroll::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.06); border-radius: 8px; }
+
+.btn-gold {
+  background: linear-gradient(90deg, rgba(214,162,75,1) 0%, rgba(240,200,120,1) 100%);
+  color: #0b0b0b;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(214,162,75,0.18);
+  border-radius: 12px;
+}
+
+.chat-header {
+  background: linear-gradient(90deg, rgba(75,15,176,0.9), rgba(122,43,230,0.9));
+  box-shadow: 0 10px 30px rgba(74,18,128,0.28);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.product-premium {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 14px;
+  padding: 12px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.bubble-assistant {
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  color: #f3eefc;
+  padding: 10px 14px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(8,6,13,0.5);
+}
+.bubble-user {
+  background: linear-gradient(90deg, rgba(75,15,176,1), rgba(122,43,230,1));
+  color: white;
+  padding: 10px 14px;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(74,18,128,0.28);
+}
